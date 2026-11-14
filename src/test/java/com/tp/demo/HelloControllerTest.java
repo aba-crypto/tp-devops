@@ -8,7 +8,11 @@ class HelloControllerTest {
 
     @Test
     void helloReturnsMessage() {
-        HelloController controller = new HelloController();
-        assertEquals("Hello DevOps!", controller.hello());
+        assertEquals("Greetings, DevOps!", new HelloController().hello());
+    }
+
+    @Test
+    void versionReturns100() {
+        assertEquals("1.0.0", new HelloController().version());
     }
 }
