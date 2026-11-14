@@ -11,5 +11,8 @@ public class HelloController {
         return "Greetings, DevOps!";
     }
 
-    // more endpoints will be added here
+    @GetMapping("/version")
+    public String version() {
+        return "1.0.0";
+    }
 }
