@@ -8,6 +8,8 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello DevOps!";
+        return "Greetings, DevOps!";
     }
+
+    // more endpoints will be added here
 }
